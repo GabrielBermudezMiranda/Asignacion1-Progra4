@@ -5,7 +5,7 @@
 ---
 
 ## Enlaces
-- **Sitio publicado:** [GitHub Pages](#) *(agregar enlace al publicar)*
+- **Sitio publicado:** [GitHub Pages](https://gabrielbermudezmiranda.github.io/Asignacion1-Progra4/)
 - **Diseño en Figma:** [Ver prototipo](https://www.figma.com/site/n5gR1dWn13rtdh3hwm5eiH/CV-Demo?node-id=0-1&t=argywS3zaTAHizvJ-1)
 
 ---
