@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Bermúdez Miranda — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Gabriel Bermúdez Miranda <span>· Full Stack Dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#sobre">About</a></li>
+      <li><a href="#skills-sec">Skills</a></li>
+      <li><a href="#proyectos">Projects</a></li>
+      <li><a href="#contacto">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hbg" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE DRAWER -->
+  <div class="drawer" id="drawer">
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    <a href="#hero"        onclick="closeDrawer()">Home</a>
+    <a href="#sobre"       onclick="closeDrawer()">About</a>
+    <a href="#skills-sec"  onclick="closeDrawer()">Skills</a>
+    <a href="#proyectos"   onclick="closeDrawer()">Projects</a>
+    <a href="#contacto"    onclick="closeDrawer()">Contact</a>
+  </div>
+
+  <div class="page">
+
+    <!-- ── HERO ── -->
+    <div class="card reveal" id="hero">
+      <div class="hero-top">
+        <div>
+          <h1 class="hero-title">Full Stack<br>Developer</h1>
+          <p class="hero-quote">Systems Engineer with a passion for building elegant and scalable digital products. Specialized in React, Node.js, and cloud architectures.</p>
+        </div>
+        <div class="hero-avatar">🧑‍💻</div>
+      </div>
+
+      <!-- stats inline like original -->
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">40+</div>
+          <div class="stat-lbl">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-lbl">Years of<br>experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8+</div>
+          <div class="stat-lbl">Technologies</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SKILLS ── -->
+    <div class="card reveal" id="skills-sec">
+      <div class="skills-inner">
+        <div>
+          <p class="block-label">Skills</p>
+          <div class="skills-grid">
+            <span class="stag">JavaScript</span>
+            <span class="stag">React</span>
+            <span class="stag">Node.js</span>
+            <span class="stag">TypeScript</span>
+            <span class="stag">HTML5/CSS3</span>
+            <span class="stag">PostgreSQL</span>
+            <span class="stag">Docker</span>
+            <span class="stag">AWS</span>
+            <span class="stag">Git/GitHub</span>
+            <span class="stag">Jest/Testing</span>
+          </div>
+
+          <div style="margin-top:1.5rem;">
+            <p class="block-label">Soft Skills</p>
+            <div class="soft-grid">
+              <span class="soft-tag">Teamwork</span>
+              <span class="soft-tag">Communication</span>
+              <span class="soft-tag">Problem solving</span>
+              <span class="soft-tag">Adaptability</span>
+              <span class="soft-tag">Technical leadership</span>
+              <span class="soft-tag">Continuous learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-avatar">🧑‍💻</div>
+      </div>
+    </div>
+
+    <!-- ── ABOUT ── -->
+    <div class="card reveal" id="sobre">
+      <div class="section-hd">
+        <p class="section-tag">about me</p>
+        <h2 class="section-title">Gabriel Bermúdez Miranda</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Systems Engineer with a passion for building <strong>elegant and scalable</strong> digital products. My approach combines development best practices with a sharp eye for user experience.</p>
+          <p>With over 10 years building web applications, I specialize in the <strong>JavaScript / TypeScript</strong> ecosystem across both frontend and backend, integrating cloud solutions that grow with the business.</p>
+          <p>I'm passionate about clean code, solid architecture, and collaborating in teams where <strong>quality and communication</strong> are at the heart of every decision.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-icon">🎓</span>
+            <div>
+              <div class="fact-lbl">Degree</div>
+              <div class="fact-val">Systems Engineering</div>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">📍</span>
+            <div>
+              <div class="fact-lbl">Location</div>
+              <div class="fact-val">Costa Rica</div>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">💼</span>
+            <div>
+              <div class="fact-lbl">Role</div>
+              <div class="fact-val">Full Stack Developer</div>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">🌐</span>
+            <div>
+              <div class="fact-lbl">Languages</div>
+              <div class="fact-val">Spanish / English</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROJECTS ── -->
+    <div class="card reveal" id="proyectos">
+      <div class="section-hd">
+        <p class="section-tag">projects</p>
+        <h2 class="section-title">What I've built</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="proj">
+          <div class="proj-num">01 — Full Stack</div>
+          <div class="proj-title">E-Commerce Platform</div>
+          <p class="proj-desc">Full e-commerce platform with shopping cart, online payments, and real-time admin dashboard.</p>
+          <div class="proj-stack">
+            <span class="ptag">React</span><span class="ptag">Node.js</span>
+            <span class="ptag">PostgreSQL</span><span class="ptag">AWS</span>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-num">02 — API REST</div>
+          <div class="proj-title">Task Management API</div>
+          <p class="proj-desc">Robust REST API for task and project management with JWT auth, role permissions, and Swagger docs.</p>
+          <div class="proj-stack">
+            <span class="ptag">Node.js</span><span class="ptag">Express</span>
+            <span class="ptag">PostgreSQL</span><span class="ptag">Docker</span>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-num">03 — Frontend</div>
+          <div class="proj-title">Analytics Dashboard</div>
+          <p class="proj-desc">Interactive dashboard with real-time charts, dynamic filters, and multi-format report exports.</p>
+          <div class="proj-stack">
+            <span class="ptag">React</span><span class="ptag">TypeScript</span>
+            <span class="ptag">D3.js</span><span class="ptag">AWS</span>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="proj-num">04 — Cloud</div>
+          <div class="proj-title">Microservices Architecture</div>
+          <p class="proj-desc">Monolith-to-microservices migration using Docker containers with automated CI/CD pipelines.</p>
+          <div class="proj-stack">
+            <span class="ptag">Docker</span><span class="ptag">AWS ECS</span>
+            <span class="ptag">Node.js</span><span class="ptag">Jest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CONTACT ── -->
+    <div class="card reveal" id="contacto">
+      <div class="contact-inner">
+        <p class="section-tag" style="margin-bottom:.4rem;">contact</p>
+        <h2 class="contact-title">Got a project in mind?</h2>
+        <p class="contact-sub">I'm always open to new opportunities, freelance projects, or just a good conversation about technology.</p>
+        <a href="mailto:gabriel.bermudez.miranda@est.una.ac.cr" class="contact-email">gabriel.bermudez.miranda@est.una.ac.cr</a>
+        <div class="social-row">
+          <a href="https://github.com/GabrielBermudezMiranda"   target="_blank" class="soc-btn">GitHub</a>
+          <a href="https://www.linkedin.com/in/gabriel-bermúdez-miranda-22b244353/" target="_blank" class="soc-btn">LinkedIn</a>
+          <a href="#"                                    class="soc-btn">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page -->
+
+  <footer>
+    © 2025 <b>Gabriel Bermúdez Miranda</b> · HTML5 + CSS3
+  </footer>
+
+  <script>
+    // hamburger
+    const hbg    = document.getElementById('hbg');
+    const drawer = document.getElementById('drawer');
+    hbg.addEventListener('click', () => drawer.classList.toggle('open'));
+    function closeDrawer() { drawer.classList.remove('open'); }
+
+    // reveal on scroll
+    const items = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
+    }, { threshold: 0.08 });
+    items.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
